@@ -21,4 +21,5 @@ public class SpringJenkinsApplicationTests {
         logger.info("Test case executing ...");
         assertTrue(true);
     }
+
 }
