@@ -19,4 +19,11 @@ public class User {
            return String.format("Hello, %s", name);
        }
     }
+
+    @GetMapping("/admin")
+    @ResponseBody
+    public String showAdmin(@RequestParam(name = "name", defaultValue = "default name") String name){
+        return "";
+    }
+
 }
