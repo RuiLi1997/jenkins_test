@@ -20,17 +20,17 @@ class UserNameTest {
     @Autowired
     private MockMvc mvc;
 
-    @Test
-    void showUserDefault() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/user");
-        MvcResult result = mvc.perform(request).andReturn();
-        assertEquals("This is a default name", result.getResponse().getContentAsString());
-    }
+//    @Test
+//    void showUserDefault() throws Exception {
+//        RequestBuilder request = MockMvcRequestBuilders.get("/user");
+//        MvcResult result = mvc.perform(request).andReturn();
+//        assertEquals("This is a default name", result.getResponse().getContentAsString());
+//    }
 
-    @Test
-    void showUserNotDefault() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/user?name=rui");
-        MvcResult result = mvc.perform(request).andReturn();
-        assertEquals("Hello, rui", result.getResponse().getContentAsString());
-    }
+//    @Test
+//    void showUserNotDefault() throws Exception {
+//        RequestBuilder request = MockMvcRequestBuilders.get("/user?name=rui");
+//        MvcResult result = mvc.perform(request).andReturn();
+//        assertEquals("Hello, rui", result.getResponse().getContentAsString());
+//    }
 }
