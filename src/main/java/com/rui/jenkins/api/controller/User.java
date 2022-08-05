@@ -26,4 +26,11 @@ public class User {
         return "";
     }
 
+    @GetMapping("/test-add")
+    @ResponseBody
+    public String testAdd(@RequestParam(name = "name", defaultValue = "default name") String name){
+        System.out.println("coooooooooool");
+        return "";
+    }
+
 }
