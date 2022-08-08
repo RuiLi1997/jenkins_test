@@ -16,4 +16,10 @@ public class Staff {
             return String.format("Hello staff, %s", name);
         }
     }
+
+    @GetMapping("/staff1")
+    @ResponseBody
+    public String showAdmin(@RequestParam(name = "name", defaultValue = "default name") String name){
+        return "staff1";
+    }
 }
